@@ -28,6 +28,7 @@ class Number:
 
         returns: bool
         """
+        return True if self.value%2==0 else False
         pass
 
     def is_prime(self):
@@ -36,7 +37,11 @@ class Number:
 
         returns: bool
         """
-        pass
+        a=0
+        for i in range(1,self.value+1):
+            if self.value%i==0:
+                a+=1
+        return True if a==2 else False
 
     def get_divisors(self):
         """
@@ -44,7 +49,11 @@ class Number:
 
         returns: list
         """
-        pass
+        a=[]
+        for i in range(1,self.value+1):
+            if self.value%i==0:
+                a.append(i)
+        return a
 
     def get_length(self):
         """
@@ -52,7 +61,7 @@ class Number:
 
         returns: int
         """
-        pass
+        
 
     def get_sum(self):
         """
@@ -60,7 +69,7 @@ class Number:
 
         returns: int
         """
-        pass
+        return len(str(self.value))
 
     def get_reverse(self):
         """
@@ -68,7 +77,7 @@ class Number:
 
         returns: int
         """
-        pass
+        return str(self.value)[::-1]
 
     def is_palindrome(self):
         """
@@ -76,8 +85,7 @@ class Number:
 
         returns: bool
         """
-        pass
-
+        return True if str(self.value)[0]==str(self.value)[-1] else False
     def get_digits(self):
         """
         Returns a list of all the digits in the number.
@@ -136,4 +144,5 @@ class Number:
     
 
 # Create a new instance of Number
-number = Number(3)
+number = Number(202)
+print(number.is_palindrome())
