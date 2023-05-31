@@ -9,7 +9,7 @@ class Number:
 
         returns: int
         """
-        pass
+        return self.value
 
     def is_odd(self):
         """
@@ -18,7 +18,7 @@ class Number:
         returns: bool
 
         """
-        pass
+        return True if self.value%2==1 else False
 
     def is_even(self):
         """
@@ -26,7 +26,7 @@ class Number:
 
         returns: bool
         """
-        pass
+        return True if self.value%2==0 else False
 
     def is_prime(self):
         """
@@ -34,7 +34,7 @@ class Number:
 
         returns: bool
         """
-        pass
+        return True if self.value
 
     def get_divisors(self):
         """
@@ -50,7 +50,7 @@ class Number:
 
         returns: int
         """
-        pass
+        return len(number)
 
     def get_sum(self):
         """
