@@ -6,9 +6,10 @@ class Number:
     def get_number(self):
         """
         Returns the number.
-
         returns: int
         """
+        return self.value
+
         pass
 
     def is_odd(self):
@@ -18,6 +19,7 @@ class Number:
         returns: bool
 
         """
+        return True if self.value%2==1 else False
         pass
 
     def is_even(self):
